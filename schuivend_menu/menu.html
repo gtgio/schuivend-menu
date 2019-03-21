@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Schuif Menu</title>
+  <meta name="author" content="Giovanni Martelli">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/stylesheet.css">
+<style>
+
+#toggleMenu:checked ~ main {
+  margin-left: 10em;
+}
+#toggleLabel::before {
+ cursor: pointer;
+
+}
+
+nav {
+  position: fixed;
+}
+
+main {
+  position: absolute;
+  margin-left: 0;
+  transition: margin-left .6s cubic-bezier(.21,.6,.58,1.5);
+}
+</style>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+
+</script>
+
+</head>
+
+
+<body lang="nl">
+
+  <input type="checkbox" id="toggleMenu">
+
+  <nav>
+    <h4>Menu</h4>
+    <ul>
+      <li>
+        <a href="inhoud.html" class="active">Inhoud schuift</a>
+      </li>
+      <li>
+        <a href="menu.html">Menu schuift</a>
+      </li>
+      <li>
+        <a href="alles.html">Alles schuift</a>
+      </li>
+    </ul>
+  </nav>
+
+    <main>
+      <label for="toggleMenu" id="toggleLabel">
+      <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </div></label>
+      <h1>Lamborghini</h1>
+        <p><img src="image/lambo.png" alt="Lamborghini"></p>
+
+<div class="info">
+        <p>Automobili Lamborghini S.p.A. is een Italiaanse fabrikant van luxe sportwagens die eigendom is van Audi.</p>
+
+        <p>Lamborghini's productiefaciliteit en het hoofdkantoor zijn gevestigd in Sant'Agata Bolognese, Italië.</p>
+
+        <p>Oprichter Ferruccio Lamborghini vergaarde zijn fortuin voornamelijk in de fabricage van Lamborghini-tractoren in Italië en Spanje.
+          Hij was begin jaren zestig een bon vivant met een passie voor snelle wagens en bezat daarvan een aanzienlijke collectie.
+          Ferruccio Lamborghini had onder andere een splinternieuwe Ferrari die in één jaar tijd viermaal terug naar de fabriek moest wegens gebreken.
+          Toen Ferrucio de twintig jaar oudere Enzo Ferrari hierover misnoegd aansprak (de twee woonden slechts veertig kilometer van elkaar) gaat het verhaal dat deze laatste hem neerbuigend afwimpelde met:
+          "Ga je maar weer met je tractoren bezighouden en laat het bouwen van sportwagens over aan hen die er verstand van hebben".</p>
+
+        <p>Enzo Ferrari wist niet wat hem overkwam toen drie maanden later op de jaarlijkse autosalon van Genève van 1963 een prototype van een nieuwe
+          supersportwagen de show stal: de Lamborghini 350 GTV, gesierd met een radiatorembleem van een aanvallende stier (het logo van de tractorenbouwer),
+          die zich de komende veertig jaar fel zou weten te meten met het steigerende Ferrari-paard.</p>
+
+        <p>Ferruccio Lamborghini was geslaagd in een onwaarschijnlijke krachttoer: in minder dan drie maanden een team van ingenieurs, stylisten en carrosseriebouwers aan te werven
+          in zijn tractorbouwbedrijf met als enige opdracht: "Bouw mij een sportwagen die in elk opzicht superieur is aan Ferrari." Van meet af aan werd het nieuwe automerk een sensatie,
+          met haar technologie die verder was (onafhankelijke ophanging, dwarsliggende middenmotor, aerodynamica...) dan die van de – eerder conservatieve – Ferrari's.
+          Lamborghini richtte zich echter puur op de verkoop van straatmodellen aan particulieren en liet het racen aan anderen over. Hoewel Ferrari al ruim een halve eeuw de
+          F1- en F2-klassementen zou blijven domineren zou het merk sinds 1964 wel degelijk onafgebroken de hete adem van Lamborghini in zijn nek blijven voelen,
+          tijdens de jaren die daarop volgden.</p>
+
+        <p>De laatste decennia – nadat Ferruccio Lamborghini zijn bedrijf verkocht – vormde Lamborghini een onderdeel van verscheidene autofabrikanten, waaronder Chrysler en het Indonesische MegaTech
+          (van Soeharto's zoon Tommy). In 1998 is het bedrijf in zijn geheel overgenomen door Audi. Sinds het bedrijf door deze Duitse Volkswagen-dochter werd overgenomen, steeg het aantal werknemers van 300 tot 450.</p>
+
+        <p>In 2014 vertrok Stefano Domenicali na strubbelingen bij Ferrari, enkele maanden na zijn vertrek bij Ferrari werd hij door Audi aangesteld waarna hij in 2016 bij Lamborghini werd aangesteld als CEO.</p>
+
+
+        <p>bron: <a href="https://nl.wikipedia.org/wiki/Lamborghini">Wikipedia</a></p>
+
+      </div>
+
+          <footer>
+          <p>All rights reserved Giovanni Martelli 2019</p>
+          <div class="validatie">
+          <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+              <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+              <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+          </a>
+      </div></footer>
+
+    </main>
+
+ </body>
+ </html>

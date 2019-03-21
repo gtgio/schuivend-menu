@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Schuif Menu</title>
+  <meta name="author" content="Giovanni Martelli">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/stylesheet.css">
+<style>
+
+#toggleMenu:checked ~ main {
+  margin-left: 10em;
+}
+#toggleLabel::before {
+ cursor: pointer;
+
+}
+
+nav {
+  position: fixed;
+}
+
+main {
+  position: absolute;
+  margin-left: 0;
+  transition: margin-left .6s cubic-bezier(.21,.6,.58,1.5);
+}
+
+</style>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "160px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+}
+</script>
+
+</head>
+
+<!-- <body lang="nl"> -->
+
+<input type="checkbox" id="toggleMenu">
+
+<div id="mySidenav" class="sidenav">
+  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+
+  <div class="closebtn" onclick="closeNav()">&times;
+      <!-- <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div> -->
+  </div>
+
+  <h4 id="menu">Menu</h4>
+  <ul class="sidenav_ul">
+    <li>
+      <a href="inhoud.html" >Inhoud schuift</a>
+    </li>
+    <li>
+      <a href="menu2.html" class="active">Menu schuift</a>
+    </li>
+    <li>
+      <a href="alles.html">Alles schuift</a>
+    </li>
+  </ul>
+</div>
+
+<main>
+  <!-- <label for="toggleMenu" id="toggleLabel"> -->
+
+  <div class="container" onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+  </div>
+
+
+<!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()"> open</span> -->
+
+<h1>Ferrari</h1>
+  <p><img src="image/ferrari.png" alt="Lamborghini"></p>
+
+<div class="info">
+
+
+  <p>Ferrari is een Italiaans automerk gevestigd in Maranello, Italië. Het bedrijf is in 1929 opgericht als raceteam (Scuderia Ferrari) door Enzo Ferrari.</p>
+
+  <p>Pas in 1947 zou het bedrijf overgaan op de productie van legale straatauto's onder de naam Ferrari S.p.A. Sinds het ontstaan wordt het bedrijf in een
+  adem genoemd met de Formule 1, waarin reeds vele successen behaald werden.</p>
+
+  <p>Enzo Ferrari begon in 1923 als (test)coureur bij Alfa Romeo waar hij al snel de verantwoordelijkheid over het hele team kreeg. In 1929 richtte hij hiervoor de Scuderia Ferrari op, die fungeerde als renstal van Alfa Romeo.
+    Tot 1938 behaalde hij hiermee zeer veel overwinningen met de Alfa Romeo wagens. In 1939 scheidden de wegen van Alfa Romeo en Ferrari echter. Enzo ging weg bij Alfa Romeo en ze kwamen overeen dat de naam “Ferrari” voor 4 jaar lang
+    niet meer in verband zou worden gebracht met racen of racewagens.Enzo richtte daarom Auto Avio Costruzioni op, wat resulteerde in de Auto Avio tipo 815. In 1943 verhuisde de fabriek van Modena naar Maranello, waar het nu nog steeds te vinden is.
+  In 1945 begonnen ze dan eindelijk met het ontwerp van wat de eerste echte Ferrari wagen moest worden, en op 2 maart 1947 was hij klaar: de Ferrari 125 S.</p>
+
+  <p>Enzo Ferrari wist niet wat hem overkwam toen drie maanden later op de jaarlijkse autosalon van Genève van 1963 een prototype van een nieuwe
+    supersportwagen de show stal: de Lamborghini 350 GTV, gesierd met een radiatorembleem van een aanvallende stier (het logo van de tractorenbouwer),
+    die zich de komende veertig jaar fel zou weten te meten met het steigerende Ferrari-paard.</p>
+
+  <p>Sinds het eerste jaar van de Formule 1 in 1950 was Ferrari al van de partij. In 1951 won Ferrari voor het eerst een grote prijs dankzij José Froilán González.
+    Het jaar erna werden ze met Alberto Ascari wereldkampioen. Ferrari is de enige constructeur die in de hele geschiedenis van de Formule 1 aanwezig is.</p>
+
+  <p>In oktober 2014 nam Sergio Marchionne, de CEO van Fiat Chrysler, de functie over van topman Luca Cordero di Montezemolo. De laatste gaf sinds 1991 leiding aan Ferrari.
+    De twee bestuurders kregen de maand ervoor een meningsverschil over de te voeren strategie. Montezemolo wilde de exclusiviteit van het merk behouden door niet meer dan 7000 wagens per jaar te verkopen.
+    Marchionne wilde de productie juist verhogen. Amedeo Felisa, topman bij Ferrari stopt na 25 jaar werkzaam te zijn geweest bij Ferrari Automobili en draagt zijn taak over aan Sergio Marchionne.
+    Deze nam eerder ook al de taken van Luca Di Montezemolo over die noodgedwongen zijn taak moest neerleggen wegen onenigheid binnen de organisatie.</p>
+
+  <p>Na het overlijden van Sergio Marchionne op 25 juli 2018 is er nieuw bestuur aangesteld binnen het automerk. De nieuwe bestuurders zijn John Elkann, hij wordt voorzitter Raad van Bestuur terwijl Louis Camilleri als CEO is aangesteld.</p>
+
+
+  <p>bron: <a href="https://nl.wikipedia.org/wiki/Ferrari_(automerk)">Wikipedia</a></p>
+
+</div>
+
+
+<footer>
+<p>All rights reserved Giovanni Martelli 2019</p>
+<div class="validatie">
+<a href="http://validator.w3.org/check?uri=referer" target="_blank">
+    <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+</a>
+</div>
+</footer>
+
+</main>
+
+</body>
+</html>

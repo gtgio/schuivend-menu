@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Schuif Menu</title>
+  <meta name="author" content="Giovanni Martelli">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/stylesheet.css">
+<style>
+
+#toggleMenu:checked ~ main {
+  margin-left: 10em;
+}
+#toggleLabel::before {
+ cursor: pointer;
+
+}
+
+nav {
+  position: fixed;
+}
+
+main {
+  position: absolute;
+  margin-left: 0;
+  transition: margin-left .6s cubic-bezier(.21,.6,.58,1.5);
+}
+
+</style>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav2").style.width = "1450px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav2").style.width = "0";
+
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+}
+</script>
+
+</head>
+
+<!-- <body lang="nl"> -->
+
+<input type="checkbox" id="toggleMenu">
+
+<div id="mySidenav2" class="sidenav2">
+  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+
+  <div class="closebtn2" onclick="closeNav()">&times;
+      <!-- <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div> -->
+  </div>
+
+<div>
+  <h4 id="menu">Menu</h4>
+  <ul class="sidenav_ul2">
+    <li>
+      <a href="inhoud.html" >Inhoud schuift</a>
+    </li>
+    <li>
+      <a href="menu2.html" >Menu schuift</a>
+    </li>
+    <li>
+      <a href="alles.html" class="active">Alles schuift</a>
+    </li>
+  </ul>
+  </div>
+</div>
+
+<main>
+  <!-- <label for="toggleMenu" id="toggleLabel"> -->
+
+  <div class="container" onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+  </div>
+
+
+<!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()"> open</span> -->
+
+<h1>Audi R8</h1>
+  <p><img src="image/audir8.png" alt="Lamborghini"></p>
+
+<div class="info">
+  <p>De Audi R8 is een sportauto met middenmotor en tweezitters, die het kenmerkende quattro permanente vierwielaangedreven vierwielaandrijving van Audi gebruikt.
+    Het werd geïntroduceerd door de Duitse autofabrikant Audi AG in 2006.</p>
+
+  <p>De auto is exclusief ontworpen, ontwikkeld en gefabriceerd door de particuliere dochteronderneming van Audi AG, die hoogwaardige auto-onderdelen produceert,
+    Audi Sport GmbH (voorheen quattro GmbH) en is gebaseerd op de Lamborghini Gallardo en momenteel het Lamborghini Huracán-platform.</p>
+
+  <p>De fundamentele constructie van de R8 is gebaseerd op het Audi Space Frame, en maakt gebruik van een aluminium monocoque die is gebouwd met behulp van ruimteframeprincipes.
+ De auto is gebouwd door Audi Sport GmbH in een onlangs gerenoveerde fabriek bij Audi's 'aluminiumsite' in Neckarsulm in Duitsland.</p>
+
+  <p>De Audi R8, gebaseerd op de Audi Le Mans quattro conceptauto (ontworpen door Frank Lamberty en Julian Hoenig) verscheen voor het eerst op de 2003 International Geneva Motor Show en de 2003 Frankfurt International Motor Show.
+  Het ontwikkelingsprogramma van de R8 begon in 2004, waarbij het ontwerp van Lamberty werd goedgekeurd en bevroren voor productie.</p>
+
+  <p>In 2005 kondigde Audi aan dat de naam van de succesvolle Audi R8-raceauto in 2007 zou worden gebruikt voor een nieuwe wegauto. In januari 2006 startten de prototypen van het productiehuis met veldtests.
+  De R8-wegauto werd officieel gelanceerd tijdens de Paris Auto Show op 30 september. September 2006. Er was enige verwarring met de naam, die de auto deelt met de 24 uur van Le Mans winnende R8 Le Mans Prototype (LMP).
+  6-time 24 Hours of Le Mans-winnaar Jacky Ickx beschreef de R8 als "de best handling wegauto van vandaag".</p>
+
+  <p>Het is ook de eerste productieauto met volledig led-koplampen.</p>
+
+
+  <p>bron: <a href="https://en.wikipedia.org/wiki/Audi_R8">Wikipedia</a></p>
+
+</div>
+
+
+<footer>
+<p>All rights reserved Giovanni Martelli 2019</p>
+<div class="validatie">
+<a href="http://validator.w3.org/check?uri=referer" target="_blank">
+    <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+</a>
+</div>
+</footer>
+
+</main>
+
+</body>
+</html>
